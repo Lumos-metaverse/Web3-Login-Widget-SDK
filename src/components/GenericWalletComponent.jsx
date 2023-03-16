@@ -1,6 +1,9 @@
 import React from 'react'
 import './GenericWalletComponent.css'
 
+//write css here 
+
+
 function GenericWalletComponent({ connectWallet, walletName, walletImg }) {
     return (
         <div className={'walletLog'} onClick={connectWallet}>
