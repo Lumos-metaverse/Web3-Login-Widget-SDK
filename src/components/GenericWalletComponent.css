@@ -1,0 +1,20 @@
+
+.walletLog{
+    color: white;
+    display: flex;
+    flex-direction: row;        
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-top: 1px solid #454184;
+    transition: 0.5s ease-out;
+}
+
+.walletLog:hover{
+    background-color: #2BF2FF;
+    -webkit-box-shadow: 0px 0px 13px 6px rgba(28,226,250,0.25);
+    -moz-box-shadow: 0px 0px 13px 6px rgba(28,226,250,0.25);
+    box-shadow: 0px 0px 13px 6px rgba(28,226,250,0.25);
+    color: black;
+}
