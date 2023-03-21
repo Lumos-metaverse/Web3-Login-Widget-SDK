@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import meta from '../logo/MetaMask_Fox.png';
-import coinbase from '../logo/coinbase.svg';
-import GenericWalletComponent from '../GenericComponent/GenericWalletComponent';
+import meta from './logo/MetaMask_Fox.png';
+import coinbase from './logo/coinbase.svg';
+import GenericWalletComponent from './GenericWalletComponent';
 import { connectCoinbase } from './config/connectCoinbase';
 import { connectMetmask } from './config/connectMetamask';
-import logo from '../logo/LumosLogo.png';
+import logo from './logo/LumosLogo.png';
 
-function Modal({ show, modalClose, setAddress}) {
+function Modal({show, modalClose}) {
     const [isHover, setIsHover] = useState(false);
 
     const handleMouseEnter = () => {
