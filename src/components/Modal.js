@@ -91,7 +91,7 @@ function Modal({show, modalClose}) {
         <div style={styles.modal}>
             <div style={show ? styles.modalShow : styles.modalHide}>
                 <div style={styles.modalControl}>
-                    <img src={logo} style={styles.logo}alt="" />
+                    <img src={logo} style={styles.logo} alt="" />
                     <button style={styles.modalButton} onClick={modalClose} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>X</button>
                 </div>
                 <div>
