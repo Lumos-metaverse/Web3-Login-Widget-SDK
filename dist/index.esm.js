@@ -1,7 +1,7 @@
-import React$1, { useState } from 'react';
+import React, { useState } from 'react';
 
 function HelloWorld() {
-  return /*#__PURE__*/React$1.createElement("h1", null, "Hello World!");
+  return /*#__PURE__*/React.createElement("h1", null, "Hello World!");
 }
 
 function _iterableToArrayLimit(arr, i) {
@@ -416,12 +416,12 @@ function GenericWalletComponent(_ref) {
     boxShadow: isHover ? "0px 0px 13px 6px rgba(28,226,250,0.25)" : "",
     color: isHover ? "#000000" : "#ffffff"
   };
-  return /*#__PURE__*/React$1.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: genericWalletComponentStyle,
     onClick: connectWallet,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave
-  }, /*#__PURE__*/React$1.createElement("h3", null, walletName), /*#__PURE__*/React$1.createElement("img", {
+  }, /*#__PURE__*/React.createElement("h3", null, walletName), /*#__PURE__*/React.createElement("img", {
     src: walletImg,
     alt: "",
     height: '35px',
@@ -649,26 +649,26 @@ function Modal(_ref) {
       return _ref3.apply(this, arguments);
     };
   }();
-  return /*#__PURE__*/React$1.createElement("div", {
+  return /*#__PURE__*/React.createElement("div", {
     style: styles.modal
-  }, /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: show ? styles.modalShow : styles.modalHide
-  }, /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     style: styles.modalControl
-  }, /*#__PURE__*/React$1.createElement("img", {
+  }, /*#__PURE__*/React.createElement("img", {
     src: img,
     style: styles.logo,
     alt: ""
-  }), /*#__PURE__*/React$1.createElement("button", {
+  }), /*#__PURE__*/React.createElement("button", {
     style: styles.modalButton,
     onClick: modalClose,
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave
-  }, "X")), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(GenericWalletComponent, {
+  }, "X")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(GenericWalletComponent, {
     connectWallet: metamaskConnect,
     walletName: "Metamask",
     walletImg: img$2
-  }), /*#__PURE__*/React$1.createElement(GenericWalletComponent, {
+  }), /*#__PURE__*/React.createElement(GenericWalletComponent, {
     connectWallet: coinbaseConnect,
     walletName: "Coinbase",
     walletImg: img$1

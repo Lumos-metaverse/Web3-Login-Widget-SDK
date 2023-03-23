@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from './Modal';
+import React from 'react';
 
 function Button() {
     const [modalVisible, setModalVisible] = useState(false);
