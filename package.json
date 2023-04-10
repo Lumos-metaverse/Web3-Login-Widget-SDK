@@ -1,8 +1,7 @@
 {
-  "name": "react-web3-wallet-widget",
+  "name": "app",
   "version": "0.1.0",
-  "private": false,
-  "type": "module",
+  "private": true,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "source": "src/index.js",
