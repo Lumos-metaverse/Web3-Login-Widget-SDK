@@ -19,7 +19,7 @@ npm install react-web3-wallet-widget
 ### 1. To use Multi-Wallet Connect in your project,  simply import the package and create a new instance:
 
 ```
-import {getUserAdress, wallletButton} from 'Web3-Login-Widget-SDK';
+import {getUserAdress, wallletButton} from 'react-web3-wallet-widget';
 ```
 
 ### 2. use WalletButton inside App.js
@@ -31,7 +31,7 @@ import {getUserAdress, wallletButton} from 'Web3-Login-Widget-SDK';
 
 ```
 import react, {useEffect, useState} from "react";
-import {getUserAdress, wallletButton} from 'Web3-Login-Widget-SDK';
+import {getUserAdress, wallletButton} from 'react-web3-wallet-widget';
 
 function App() {
   return (
