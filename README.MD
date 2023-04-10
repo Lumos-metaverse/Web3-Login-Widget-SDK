@@ -1,6 +1,6 @@
 # Web3-Login-Widget-SDK
 
-Web3-Login-Widget-SDK is a lightweight NPM package that enables developers to integrate multiple wallet connections into their dApps. With this package, users can seamlessly connect their favorite wallets, including Metamask, Coinbase, and more, to interact with various blockchain-based applications.
+react-web3-wallet-widget is a lightweight NPM package that enables developers to integrate multiple wallet connections into their dApps. With this package, users can seamlessly connect their favorite wallets, including Metamask, Coinbase, and more, to interact with various blockchain-based applications.
 
 ## Features
 - Support for multiple wallet connections, including Metamask, Coinbase, and others
@@ -8,10 +8,10 @@ Web3-Login-Widget-SDK is a lightweight NPM package that enables developers to in
 - Integration with popular dApps on various blockchains
 
 ## Installation
-To install Web3-Login-Widget-SDK, simply run the following command in your terminal:
+To install react-web3-wallet-widget, simply run the following command in your terminal:
 
 ```
-npm install Web3-Login-Widget-SDK
+npm install react-web3-wallet-widget
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install Web3-Login-Widget-SDK
 ### 1. To use Multi-Wallet Connect in your project,  simply import the package and create a new instance:
 
 ```
-import {wallletButton} from 'Web3-Login-Widget-SDK';
+import {wallletButton} from 'react-web3-wallet-widget';
 ```
 
 ### 2. use WalletButton inside App.js
@@ -31,7 +31,7 @@ import {wallletButton} from 'Web3-Login-Widget-SDK';
 
 ```
 import react, {useEffect, useState} from "react";
-import {Button} from 'Web3-Login-Widget-SDK';
+import {Button} from 'react-web3-wallet-widget';
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
 ```
 
 ## Supported Wallets
-Web3-Login-Widget-SDK supports the following wallets:
+react-web3-wallet-widget supports the following wallets:
 
 ### - Metamask
 ### - Coinbase Wallet
