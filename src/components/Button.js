@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Modal from './Modal'
+import Modal from './Modal';
+import React from 'react';
 
-function Button({address, setAddress}) {
+function Button() {
     const [modalVisible, setModalVisible] = useState(false);
 
     const connectWalletButton = {
@@ -20,8 +21,8 @@ function Button({address, setAddress}) {
 
     return (
         <div>
-            <Modal show={modalVisible} modalClose={()=>{setModalVisible(false)}} setAddress={setAddress}/>
-            <button style={connectWalletButton} onClick={()=>{setModalVisible(true)}}>{address ? `Connected ${address}` : "Connect wallet"}</button>
+            <Modal show={modalVisible} modalClose={()=>{setModalVisible(false)}}/>
+            <button style={connectWalletButton} onClick={()=>{setModalVisible(true)}}>Connect wallet</button>
         </div>
     );
 }

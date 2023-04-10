@@ -1,9 +1,10 @@
 import babel from '@rollup/plugin-babel';
 import external from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
-import pkg from './package.json';
+import pkg from './package.json' assert {type: 'json'};
 import postcss from 'rollup-plugin-postcss';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import image from '@rollup/plugin-image';
 
 
 export default {
@@ -13,6 +14,7 @@ export default {
         { file: pkg.module, format: 'esm' }
     ],
     plugins: [
+        [image()],
         external(),
         babel({
             exclude: 'node_modules/**',

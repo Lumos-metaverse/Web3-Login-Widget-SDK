@@ -19,34 +19,23 @@ npm install Web3-Login-Widget-SDK
 ### 1. To use Multi-Wallet Connect in your project,  simply import the package and create a new instance:
 
 ```
-import {getUserAdress, wallletButton} from 'Web3-Login-Widget-SDK';
+import {wallletButton} from 'Web3-Login-Widget-SDK';
 ```
 
 ### 2. use WalletButton inside App.js
 ```
-<walletButton/>
+<Button/>
 ```
 
-### 3. call getUserAddress to get address
-```
-getUserAdress();
-```
-
-### 4. your App.js going to look like this 
+### 3. your App.js going to look like this 
 
 ```
 import react, {useEffect, useState} from "react";
-import {getUserAdress, wallletButton} from 'Web3-Login-Widget-SDK';
+import {Button} from 'Web3-Login-Widget-SDK';
 
 function App() {
-  const [address, setAddress] = useState();
-
-  useEffect(() => {
-    walletAddress = getUserAdress();
-  }, [])
-
   return (
-    <walletButton/>
+    <Button/>
   )
 }
 ```
@@ -58,13 +47,7 @@ Web3-Login-Widget-SDK supports the following wallets:
 ### - Coinbase Wallet
 
 ## Contributing
-Contributions to Multi-Wallet Connect are welcome. To contribute, please follow these steps:
-
- - Fork the repository.
- - Create a new branch for your feature or bug fix.
-- Make your changes and commit them.
-- Push your changes to your forked repository.
-- Create a pull request from your forked repository to the original repository.
+To contribute, please refer to contribute folder.
 
 ## License
 Multi-Wallet Connect is licensed under the MIT license.

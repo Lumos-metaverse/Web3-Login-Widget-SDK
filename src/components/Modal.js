@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import meta from '../logo/MetaMask_Fox.png';
-import coinbase from '../logo/coinbase.svg';
-import GenericWalletComponent from '../GenericComponent/GenericWalletComponent';
+import meta from './logo/MetaMask_Fox.png';
+import coinbase from './logo/coinbase.svg';
+import GenericWalletComponent from './GenericWalletComponent';
 import { connectCoinbase } from './config/connectCoinbase';
 import { connectMetmask } from './config/connectMetamask';
-import logo from '../logo/LumosLogo.png';
+import logo from './logo/LumosLogo.png';
 
-function Modal({ show, modalClose, setAddress}) {
+function Modal({show, modalClose}) {
     const [isHover, setIsHover] = useState(false);
 
     const handleMouseEnter = () => {
@@ -91,7 +91,7 @@ function Modal({ show, modalClose, setAddress}) {
         <div style={styles.modal}>
             <div style={show ? styles.modalShow : styles.modalHide}>
                 <div style={styles.modalControl}>
-                    <img src={logo} style={styles.logo}alt="" />
+                    <img src={logo} style={styles.logo} alt="" />
                     <button style={styles.modalButton} onClick={modalClose} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>X</button>
                 </div>
                 <div>
